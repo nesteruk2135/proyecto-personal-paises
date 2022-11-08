@@ -1,0 +1,84 @@
+.cards-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    font-size: 12px;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }}
+    .cards {
+      padding: 7%;
+      position: relative;
+      display: inline-block;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+      .cards-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(172, 115, 0, 0.374);
+        backdrop-filter: blur(14px);
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 1rem -0.1rem black;
+        padding: 1rem;
+        transition: 0.5s;
+      }
+       /* :hover {
+          transform: scale(1.1);
+        }*/
+        .cards-flag {
+          width: auto;
+          max-height: 180px;
+          height: auto;
+          top: 0;
+          left: 0;
+          margin: auto;
+          border-radius: 10px;
+        }
+        .cards-name {
+          position: relative;
+          font-size: 1.8rem;
+          color: #fff;
+          text-shadow: 0.16rem 0.1rem 0 black;
+        }
+        .cards-info {
+          margin-top: -0.5rem;
+          font-size: 1.5rem;
+        }
+        .cards-btn {
+          background-color: rgb(111, 24, 0);
+          border: 1px solid black;
+          border-radius: 10px;
+          color: white;
+          padding: 0.3rem;
+          box-shadow: 0.07rem 0.07rem 0 0 black;
+          text-shadow: 0.07rem 0.1rem 1px black;
+          transition: 0.5s;
+        }
+         /* :hover {
+            cursor: pointer;
+            transition: 0.5s;
+            background-color: rgba(125, 123, 0, 0.545);
+            backdrop-filter: blur(1px);
+            transform: scale(1.02);
+            box-shadow: 0 0 1rem 0.2rem black;
+          }*/
+        
+  
+  .cards-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
